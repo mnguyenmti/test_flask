@@ -12,6 +12,11 @@
 {% if postRequest%}
 <div id="images_placeholder">
     <div class="row">
+        <div class="col-sm-12" >
+            <img id="route_img" src={{imagePath['route']}} alt="Route image missing" class="img-responsive" width="100%">
+        </div>
+    </div>
+    <div class="row">
         <div class="col-sm-6">
             <img id="alt_img" src={{imagePath['alt']}} alt="Altitude image missing" class="img-responsive">
         </div>
@@ -25,21 +30,16 @@
         <div class="col-sm-6">
             <img id="psi_img" src={{imagePath['psi']}} alt="Psi image missing" class="img-responsive">
         </div>
-
         <div class="col-sm-6">
-            <img id="route_img" src={{imagePath['route']}} alt="Route image missing" class="img-responsive">
+            <img id="thrust_force_img" src={{imagePath['thrust_force']}} alt="Thrust force image missing" class="img-responsive">
         </div>
+
     </div>
 
     <div class="row">
         <div class="col-sm-6">
             <img id="speed_img" src={{imagePath['speed']}} alt="Speed image missing" class="img-responsive">
         </div>
-
-        <div class="col-sm-6">
-            <img id="thrust_force_img" src={{imagePath['thrust_force']}} alt="Thrust force image missing" class="img-responsive">
-        </div>
-
     </div>
 
 
